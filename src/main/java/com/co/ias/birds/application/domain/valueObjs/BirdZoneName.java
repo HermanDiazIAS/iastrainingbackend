@@ -8,7 +8,7 @@ public class BirdZoneName {
     public BirdZoneName(String value) {
         value = value.trim();
         Validate.notNull(value,"The common name zone field cannot be empty or null.");
-        Validate.isTrue(value.length() > 20,"The maximum name zone size is 20 characters.");
+        Validate.isTrue(value.length() <= 20,"The maximum name zone size is 20 characters.");
 
         this.value = value;
     }

@@ -7,7 +7,7 @@ public class BirdScientificName {
 
     public BirdScientificName(String value) {
         Validate.notNull(value,"The common scientific name field can´t be empty");
-        Validate.isTrue(value.length() <= 30,"The maximum scientific name size is 30 characters.");
+        //Validate.isTrue(value.length() <= 30,"The maximum scientific name size is 30 characters.");
         this.value = value;
     }
 
