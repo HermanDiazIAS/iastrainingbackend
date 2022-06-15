@@ -23,8 +23,8 @@ public class CreateBirdService implements CreateBirdUseCase {
                 new BirdCommonName(birdDTO.getCommonName()),
                 new BirdScientificName(birdDTO.getScientificName()),
                 new BirdZoneName(birdDTO.getZoneName()),
-                new BirdConfirmedQuantity(birdDTO.getConfirmedQuantity()));
-
+                new BirdConfirmedQuantity(birdDTO.getConfirmedQuantity())
+        );
             birdRepository.store(bird);
             birdDTO.setStatus("Created");
 
